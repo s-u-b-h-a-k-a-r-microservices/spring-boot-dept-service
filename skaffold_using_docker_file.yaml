@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+metadata:
+  name: spring-boot-dept-service
+build:
+  artifacts:
+    - image: subhakarkotta/spring-boot-dept-service
+      docker:
+         dockerfile: Dockerfile
+  tagPolicy:
+    sha256: {}
